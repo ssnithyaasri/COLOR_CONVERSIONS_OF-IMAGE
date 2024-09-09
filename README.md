@@ -76,21 +76,22 @@ cv2.destroyAllWindows()
 i)Draw a line from the top-left to the bottom-right of the image.
 ```
 import cv2
-img = cv2.imread("C.JPG")
-res = cv2.line(img, (0, 0), (599, 799), (200, 100, 205), 10)
+img = cv2.imread("panda.jpg")
+res = cv2.line(img, (0, 0), (1099, 799), (200, 100, 205), 10)
 cv2.imshow('Image Window', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
 ```
-![image](https://github.com/user-attachments/assets/c1b6a9ac-3a51-4795-aff1-b41a06af5aaa)
+![image](https://github.com/user-attachments/assets/eea784bb-eb94-4af8-a5eb-481dc62a2457)
+
 ii)Draw a circle at the center of the image.
 ```
 import cv2
 
 # Load the image
-img = cv2.imread("panda.JPG")
+img = cv2.imread("panda.jpg")
 
 # Get the dimensions of the image
 height, width, _ = img.shape
@@ -112,9 +113,9 @@ iii)Draw a rectangle around a specific region of interest in the image.
 ```
 import cv2
 
-img = cv2.imread("panda.JPG")
+img = cv2.imread("panda.jpg")
 start=(0,0)
-stop=(409,529)
+stop=(318,200)
 color=(100,255,100)
 thickness=10
 res_img=cv2.rectangle(img,start,stop,color,thickness)
@@ -123,9 +124,10 @@ cv2.imshow('Image Window', res_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/f71cc015-cd84-4ece-89b0-4d61fd8070fc)
+![image](https://github.com/user-attachments/assets/a501d0f7-5d5c-4f27-8866-c3cb36314d1c)
 
-iv)Add the text "OpenCV Drawing" at the top-left corner of the image.
+
+iv)Add the text "PANDA" at the top-left corner of the image.
 ```
 import cv2
 
