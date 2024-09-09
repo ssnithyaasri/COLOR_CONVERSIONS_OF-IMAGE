@@ -62,7 +62,7 @@ o	Save the final modified image to your local directory.
 ### i)Read and Display an Image
 ```
 import cv2
-image=cv2.imread('c.jpg',1)
+image=cv2.imread('panda.jpg',1)
 cv2.imshow('Image Window', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -90,7 +90,7 @@ ii)Draw a circle at the center of the image.
 import cv2
 
 # Load the image
-img = cv2.imread("C.JPG")
+img = cv2.imread("panda.JPG")
 
 # Get the dimensions of the image
 height, width, _ = img.shape
@@ -112,7 +112,7 @@ iii)Draw a rectangle around a specific region of interest in the image.
 ```
 import cv2
 
-img = cv2.imread("C.JPG")
+img = cv2.imread("panda.JPG")
 start=(0,0)
 stop=(409,529)
 color=(100,255,100)
@@ -130,7 +130,7 @@ iv)Add the text "OpenCV Drawing" at the top-left corner of the image.
 import cv2
 
 # Load the image
-img = cv2.imread("C.JPG")
+img = cv2.imread("panda.JPG")
 
 # Define the text to be added and its position
 text = "OPENCV DRAWING"
@@ -160,7 +160,7 @@ cv2.destroyAllWindows()
 i)Convert the image from RGB to HSV and display it.
 ```
 import cv2
-img = cv2.imread('c.jpg',1)
+img = cv2.imread('panda.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 hsv2 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
@@ -173,7 +173,7 @@ cv2.destroyAllWindows()
 ii.)Convert the image from RGB to GRAY and display it.
 ```
 import cv2
-img = cv2.imread('c.jpg',1)
+img = cv2.imread('panda.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
@@ -185,7 +185,7 @@ cv2.destroyAllWindows()
 iii.)Convert the image from RGB to YCrCb and display it.
 ```
 import cv2
-img = cv2.imread('c.jpg',1)
+img = cv2.imread('panda.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -197,7 +197,7 @@ cv2.destroyAllWindows()
 iv.)Convert the HSV image back to RGB and display it.
 ```
 import cv2
-img = cv2.imread('c.jpg',1)
+img = cv2.imread('panda.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
@@ -216,7 +216,7 @@ cv2.destroyAllWindows()
 import cv2
 
 # Load and resize the image
-img = cv2.imread('c.jpg', 1)
+img = cv2.imread('panda.jpg', 1)
 img = cv2.resize(img, (300, 200))
 
 # Show the original image
@@ -267,7 +267,7 @@ cv2.destroyAllWindows()
 import cv2
 
 # Load the image
-image1=cv2.imread('c.jpg',1)
+image1=cv2.imread('panda.jpg',1)
 
 # Define the starting point and size of the ROI
 x, y = 50, 50
@@ -290,7 +290,7 @@ cv2.destroyAllWindows()
 i.)Flip the original image horizontally and display it.
 ```
 import cv2
-img = cv2.imread("c.JPG")
+img = cv2.imread("panda.jpg")
 img = cv2.resize(img,(300,200))
 res=cv2.rotate(img,cv2.ROTATE_180)
 cv2.imshow('Original',img)
@@ -303,7 +303,7 @@ ii.)Flip the original image vertically and display it.
 ```
 import cv2
 
-img = cv2.imread("c.JPG")
+img = cv2.imread("panda.JPG")
 img = cv2.resize(img,(300,200))
 res=cv2.rotate(img,cv2.ROTATE_90_CLOCKWISE)
 # Display the HSV image
