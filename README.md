@@ -111,20 +111,13 @@ cv2.destroyAllWindows()
 
 iii)Draw a rectangle around a specific region of interest in the image.
 ```
-import cv2
+![Uploading image.png…]()
 
-img = cv2.imread("panda.jpg")
-start=(0,0)
-stop=(318,200)
-color=(100,255,100)
-thickness=10
-res_img=cv2.rectangle(img,start,stop,color,thickness)
-# Display the HSV image
-cv2.imshow('Image Window', res_img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/a501d0f7-5d5c-4f27-8866-c3cb36314d1c)
+![image](https://github.com/user-attachments/assets/186b306b-ff17-4639-a6ad-f3487a027214)
+
+
+
 
 
 iv)Add the text "PANDA" at the top-left corner of the image.
